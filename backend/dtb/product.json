@@ -1,0 +1,82 @@
+[
+  {
+    "product_id": 1,
+    "product_name": "Ram 3500",
+    "product_category": "Dodge",
+    "product_price": 468078,
+    "product_description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus product_id, turpis. Integer aliquet, massa product_id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+    "product_description_short": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl."
+  },
+  {
+    "product_id": 2,
+    "product_name": "Bonneville",
+    "product_category": "Pontiac",
+    "product_price": 3897099,
+    "product_description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+    "product_description_short": "Suspendisse potenti."
+  },
+  {
+    "product_id": 3,
+    "product_name": "Mustang",
+    "product_category": "Ford",
+    "product_price": 3125740,
+    "product_description": "Fusce consequat. Nulla nisl. Nunc nisl.",
+    "product_description_short": "Maecenas pulvinar lobortis est."
+  },
+  {
+    "product_id": 4,
+    "product_name": "Supra",
+    "product_category": "Toyota",
+    "product_price": 9855151,
+    "product_description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+    "product_description_short": "Aliquam erat volutpat."
+  },
+  {
+    "product_id": 5,
+    "product_name": "Camry Solara",
+    "product_category": "Toyota",
+    "product_price": 7783163,
+    "product_description": "Praesent product_id massa product_id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus product_id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+    "product_description_short": "Sed sagittis."
+  },
+  {
+    "product_id": 6,
+    "product_name": "Q",
+    "product_category": "Infiniti",
+    "product_price": 7530271,
+    "product_description": "Praesent product_id massa product_id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "product_description_short": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc."
+  },
+  {
+    "product_id": 7,
+    "product_name": "Rabbit",
+    "product_category": "Volkswagen",
+    "product_price": 2091943,
+    "product_description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus product_id, turpis. Integer aliquet, massa product_id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+    "product_description_short": "Integer ac leo."
+  },
+  {
+    "product_id": 8,
+    "product_name": "MX-3",
+    "product_category": "Mazda",
+    "product_price": 413877,
+    "product_description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus product_id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+    "product_description_short": "Vivamus vel nulla eget eros elementum pellentesque."
+  },
+  {
+    "product_id": 9,
+    "product_name": "Gallardo",
+    "product_category": "Lamborghini",
+    "product_price": 1723225,
+    "product_description": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+    "product_description_short": "Vivamus vel nulla eget eros elementum pellentesque."
+  },
+  {
+    "product_id": 10,
+    "product_name": "3 Series",
+    "product_category": "BMW",
+    "product_price": 3736260,
+    "product_description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+    "product_description_short": "Fusce congue, diam product_id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue."
+  }
+]
