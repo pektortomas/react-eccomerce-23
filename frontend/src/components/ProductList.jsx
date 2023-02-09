@@ -9,7 +9,7 @@ import { addToCart } from "../slices/cartSlice";
 const ProductList = () => {
   const style = {
     page: css({
-      height: "80vh",
+      height: "100%",
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
@@ -68,7 +68,6 @@ const ProductItem = (props) => {
       margin: "1rem",
     }),
     productButton: css({
-      background: "rgba(92,83,220,1)",
       background: "linear-gradient(110deg, rgba(92,83,220,1) 0%, rgba(126,69,236,1) 100%)",
       fontSize: "1rem",
       fontWeight: "400",

@@ -1,0 +1,37 @@
+@media screen and (min-width: 768){
+    .ubermenu-tax_category{
+        width: 120px;
+        padding-left: 40px;
+        /*padding-top: 5px;*/
+        background-image: url("http://dev-wp/wp-content/uploads/2023/02/tax.png") !important;
+        background-repeat: no-repeat !important;
+        background-size: 30px !important;
+        background-position: left 10px top 5px !important;	
+    }
+    .ubermenu-tax_category:hover{
+        background-color: #37a93526 !important;
+    }
+    .ubermenu-law_category{
+        width: 170px;
+        padding-left: 40px;
+        /*padding-top: 5px;*/
+        background-image: url("http://dev-wp/wp-content/uploads/2023/02/law.png") !important;
+        background-repeat: no-repeat !important;
+        background-size: 30px !important;
+        background-position: left 10px top 5px !important;
+    }
+    .ubermenu-law_category:hover{
+        background-color: #83cbe740 !important;
+    }
+    .ubermenu-business_category{
+        width: 180px;
+        padding-left: 40px;
+        /*padding-top: 5px;*/
+        background-image: url("http://dev-wp/wp-content/uploads/2023/02/business.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: left 10px top 5px !important;
+    }
+    .ubermenu-business_category:hover{
+        background-color: #e95c111c !important;
+    }
+}
