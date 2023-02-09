@@ -1,5 +1,6 @@
 import { css } from "@emotion/react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 /** @jsxImportSource @emotion/react */
 
 const Header = () => {
@@ -16,7 +17,9 @@ const Header = () => {
   return (
     <div css={style.header}>
       <h1>Car Shop</h1>
-      <span>Cart: {productCountInCart}</span>
+      <Link to="cart">
+        <span>Cart: {productCountInCart}</span>
+      </Link>
     </div>
   );
 };
