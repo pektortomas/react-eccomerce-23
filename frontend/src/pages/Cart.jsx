@@ -2,6 +2,7 @@ import { css } from "@emotion/react";
 import { useDispatch, useSelector } from "react-redux";
 import { formatPrice } from "../utils/helperFunctions";
 import { removeFromCart } from "../slices/cartSlice";
+import { v4 as uuidv4 } from "uuid";
 /** @jsxImportSource @emotion/react */
 
 const Cart = () => {
@@ -43,7 +44,7 @@ const Cart = () => {
       <h2>Total: {formatPrice(cart.value, "Kč")}</h2>
       <div>
         {cart.products.map((element) => (
-          <div key={element.product_id} css={style.productRow}>
+          <div key={uuidv4()} css={style.productRow}>
             <h2>{element.product_name}</h2>
             <p>{formatPrice(element.product_price, "Kč")}</p>
             <button onClick={() => dispatch(removeFromCart(element))} css={style.removeButton}>
