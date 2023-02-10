@@ -82,12 +82,19 @@ const Cart = () => {
           </div>
         ))}
       </div>
-      <div css={style.row}>
-        <h2>Total: {formatPrice(cart.value, "Kč")}</h2>
-        <Link to="/order">
-          <button css={style.linkButton}>Continue to order</button>
-        </Link>
-      </div>
+      {cart.products.length > 0 ? (
+        <div css={style.row}>
+          <h2>Total: {formatPrice(cart.value, "Kč")}</h2>
+          <button css={style.linkButton} onClick={() => dispatch(removeAllCart())}>
+            Remove All
+          </button>
+          <Link to="/order">
+            <button css={style.linkButton}>Continue to order</button>
+          </Link>
+        </div>
+      ) : (
+        <h3>Please add some product to Cart first</h3>
+      )}
     </div>
   );
 };
