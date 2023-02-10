@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Cart } from "./pages/Cart";
 import { Order } from "./pages/Order";
+import { OrderComplete } from "./pages/OrderComplete";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/orderComplete",
-    element: <App />,
+    element: <OrderComplete />,
   },
 ]);
 

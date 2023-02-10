@@ -124,7 +124,7 @@ const Order = () => {
               setFormTwoValues({ street: "", city: "", zip: "" });
               services.sendOrder(customerData, cartProducts);
               dispatch(removeAllCart());
-              navigate("/");
+              navigate("/orderComplete");
             }}
           >
             Order
