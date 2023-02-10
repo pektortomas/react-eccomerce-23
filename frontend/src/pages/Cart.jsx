@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { formatPrice } from "../utils/helperFunctions";
 import { removeFromCart } from "../slices/cartSlice";
 import { v4 as uuidv4 } from "uuid";
+import { Link } from "react-router-dom";
 /** @jsxImportSource @emotion/react */
 
 const Cart = () => {
@@ -33,6 +34,30 @@ const Cart = () => {
         background: "#817ae8",
       },
     }),
+    backButton: css({
+      background: "linear-gradient(110deg, rgba(92,83,220,1) 0%, rgba(126,69,236,1) 100%)",
+      fontSize: "1rem",
+      fontWeight: "400",
+      padding: "1rem 3rem",
+      margin: "1rem",
+      border: "none",
+      borderRadius: "2rem",
+      cursor: "pointer",
+      transition: "all ease .5s",
+      "&:hover": {
+        background: "#817ae8",
+      },
+    }),
+    row: css({
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      marginBottom: "2rem",
+      padding: "0 2rem",
+    }),
+    productList: css({
+      margin: "3rem 0",
+    }),
   };
 
   const cart = useSelector((state) => state.cart);
@@ -40,9 +65,13 @@ const Cart = () => {
 
   return (
     <div css={style.page}>
-      <h1>Cart</h1>
-      <h2>Total: {formatPrice(cart.value, "Kč")}</h2>
-      <div>
+      <div css={style.row}>
+        <h1>Cart</h1>
+        <Link to="/">
+          <button css={style.backButton}>Back to shop</button>
+        </Link>
+      </div>
+      <div css={style.productList}>
         {cart.products.map((element) => (
           <div key={uuidv4()} css={style.productRow}>
             <h2>{element.product_name}</h2>
@@ -53,6 +82,7 @@ const Cart = () => {
           </div>
         ))}
       </div>
+      <h2>Total: {formatPrice(cart.value, "Kč")}</h2>
     </div>
   );
 };
