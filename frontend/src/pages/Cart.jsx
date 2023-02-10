@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import { useDispatch, useSelector } from "react-redux";
 import { formatPrice } from "../utils/helperFunctions";
-import { removeFromCart } from "../slices/cartSlice";
+import { removeAllCart, removeFromCart } from "../slices/cartSlice";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
 /** @jsxImportSource @emotion/react */
@@ -34,7 +34,7 @@ const Cart = () => {
         background: "#817ae8",
       },
     }),
-    backButton: css({
+    linkButton: css({
       background: "linear-gradient(110deg, rgba(92,83,220,1) 0%, rgba(126,69,236,1) 100%)",
       fontSize: "1rem",
       fontWeight: "400",
@@ -68,7 +68,7 @@ const Cart = () => {
       <div css={style.row}>
         <h1>Cart</h1>
         <Link to="/">
-          <button css={style.backButton}>Back to shop</button>
+          <button css={style.linkButton}>Back to shop</button>
         </Link>
       </div>
       <div css={style.productList}>
@@ -82,7 +82,12 @@ const Cart = () => {
           </div>
         ))}
       </div>
-      <h2>Total: {formatPrice(cart.value, "Kč")}</h2>
+      <div css={style.row}>
+        <h2>Total: {formatPrice(cart.value, "Kč")}</h2>
+        <Link to="/order">
+          <button css={style.linkButton}>Continue to order</button>
+        </Link>
+      </div>
     </div>
   );
 };
